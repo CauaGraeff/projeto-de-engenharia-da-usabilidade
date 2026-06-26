@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notee - Detalhes do Álbum</title>
+    <title>Notee</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,8 +27,8 @@
         <nav class="header-nav">
             <a href="tela_albuns.html" class="nav-item">Início</a>
             <a href="albuns.html" class="nav-item">Artistas</a>
-            <a href="fanClube.html" class="nav-item">Fã Clube</a>
-            <a href="#" class="nav-item">Favoritos</a>
+            <a href="fanclube.html" class="nav-item">Fã Clube</a>
+            <a href="tela_favoritos.html" class="nav-item">Favoritos</a>
             <a href="config.html" class="nav-item">Configurações</a>
         </nav>
 
@@ -44,13 +44,13 @@
         <aside class="menu-lateral">
             <div class="grupo-lateral-topo">
                 <a href="tela_albuns.html" class="item-lateral-circular"><i class="bi bi-house-door-fill"></i></a>
-                <a href="tela_albuns.html" class="item-lateral-circular"><i class="bi bi-arrow-left"></i></a>
+                <a href="index.html" class="item-lateral-circular"><i class="bi bi-arrow-left"></i></a>
                 <a href="config.html" class="item-lateral-circular"><i class="bi bi-gear-fill"></i></a>
             </div>
 
             <div class="grupo-lateral-rodape">
                 <a href="perfil.html" class="item-lateral-circular"><i class="bi bi-person-fill"></i></a>
-                <a href="index.html" class="item-lateral-circular"><i class="bi bi-box-arrow-left"></i></a>
+                <a href="#" class="item-lateral-circular"><i class="bi bi-box-arrow-left"></i></a>
             </div>
         </aside>
 
@@ -107,7 +107,7 @@
                                 <span class="numero-faixa">01</span>
                                 <div class="capa-miniatura-musica"></div>
                                 <div class="textos-musica">
-                                    <a class="music-link" href="TelaComentario.html"><span class="nome-musica">SKINNY</span></a>
+                                    <a class="music-link" href="telaComentario.html"><span class="nome-musica">SKINNY</span></a>
                                     <span class="subtitulo-artista">Billie Eilish</span>
                                 </div>
                             </div>
@@ -127,6 +127,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="card-musica">
                             <div class="musica-lado-esquerdo">
                                 <span class="numero-faixa">02</span>
@@ -366,7 +367,7 @@
             </div>
 
             <footer class="barra-comentario">
-                <input type="text" placeholder="Digite aqui o que você achou da música..." class="input-opiniao">
+                <input type="text" placeholder="Digite aqui o que você achou deste álbum" class="input-opiniao">
                 <div class="estrelas-comentario">
                     <i class="bi bi-star-fill estrela-comentario-interativa" data-valor="1"></i>
                     <i class="bi bi-star-fill estrela-comentario-interativa" data-valor="2"></i>
@@ -378,6 +379,62 @@
                     <i class="bi bi-send-fill"></i>
                 </button>
             </footer>
+
+            <section class="secao-top-avaliacoes">
+                <h2 class="titulo-secao-reviews">Top Avaliações</h2>
+
+                <div class="lista-reviews">
+                    <div class="card-review">
+                        <div class="review-header">
+                            <div class="usuario-info">
+                                <i class="bi bi-person-circle user-review-icon"></i>
+                                <span class="nome-usuario">@usuario1</span>
+                            </div>
+                            <div class="estrelas-review">
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill ativa"></i>
+                            </div>
+                        </div>
+                        <p class="texto-review">Álbum impecável!</p>
+                        <div class="review-acoes">
+                            <button class="btn-acao-review btn-curtir" title="Curtir avaliação">
+                                <i class="bi bi-heart"></i> <span class="contador-likes">142</span>
+                            </button>
+                            <button class="btn-acao-review btn-responder" title="Responder avaliação">
+                                <i class="bi bi-chat-left-text"></i> <span class="contador-respostas">12</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-review">
+                        <div class="review-header">
+                            <div class="usuario-info">
+                                <i class="bi bi-person-circle user-review-icon"></i>
+                                <span class="nome-usuario">@usuario2</span>
+                            </div>
+                            <div class="estrelas-review">
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill ativa"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <p class="texto-review">Albúm lindo, mas acho que faltou mais tracks</p>
+                        <div class="review-acoes">
+                            <button class="btn-acao-review btn-curtir" title="Curtir avaliação">
+                                <i class="bi bi-heart"></i> <span class="contador-likes">98</span>
+                            </button>
+                            <button class="btn-acao-review btn-responder" title="Responder avaliação">
+                                <i class="bi bi-chat-left-text"></i> <span class="contador-respostas">5</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
     </div>

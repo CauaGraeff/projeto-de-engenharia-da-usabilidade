@@ -759,7 +759,174 @@ body {
     transform: scale(1.05);
 }
 .music-link {
-    text-decoration: none; /* Remove o sublinhado padrão do link */
-    color: inherit; /* Mantém a cor do texto como está */
+    text-decoration: none; 
+    color: inherit; 
     transition: color 0.2s ease, text-decoration
+}
+
+/* ==========================================================================
+   10. AJUSTES ESPECÍFICOS PARA A TELA DE FAVORITOS (Corações de Destaque)
+   ========================================================================== */
+.album-card-wrapper {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0; 
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.favorite-btn.pinned {
+    color: #ff3366; 
+}
+
+.secao-top-avaliacoes {
+    margin-top: 15px; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo-secao-reviews {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 22px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lista-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.card-review {
+    display: flex;
+    flex-direction: column;
+    background-color: #00597A; 
+    padding: 20px 28px;
+    border-radius: 14px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.card-review:hover {
+    transform: translateY(-2px);
+    background-color: #00658B;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-review-icon {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nome-usuario {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.estrelas-review {
+    display: flex;
+    gap: 4px;
+    color: #707070;
+    font-size: 0.9rem;
+}
+
+.estrelas-review .ativa {
+    color: #FFB800; 
+}
+
+.texto-review {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #E0E0E0;
+    margin-bottom: 16px;
+}
+
+.review-acoes {
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 12px;
+}
+
+.btn-acao-review {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-acao-review:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+}
+
+.btn-curtir:hover i {
+    color: #FF4B4B; 
+}
+
+.btn-responder:hover i {
+    color: #00D2FF; 
+}
+
+.contador-likes,
+.contador-respostas {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
 }
